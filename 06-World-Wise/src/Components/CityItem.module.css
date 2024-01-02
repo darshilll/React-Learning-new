@@ -1,0 +1,35 @@
+.cityItems,
+.cityItems:link,
+.cityItems:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cityElements {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 2px solid green;
+  gap: 4rem;
+  display: flex;
+  background-color: rgba(45, 44, 44, 0.8);
+}
+
+.cityName {
+  margin-right: auto;
+}
+
+.date {
+  font-size: small;
+}
+
+.btn {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  transition: all 0.2s;
+  cursor: pointer  ;
+}
+
+.btn:hover{
+    background-color: olive;
+}

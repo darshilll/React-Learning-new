@@ -1,0 +1,8 @@
+.btn{
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5px;
+    height: 3rem;
+    width: 5rem;
+    background-color:var(--color-brand--2);
+}

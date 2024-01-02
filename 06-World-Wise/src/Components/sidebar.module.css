@@ -1,0 +1,21 @@
+.sidebar {
+  background-image: linear-gradient(
+    to right,
+    rgba(18, 17, 17),
+    rgb(99, 95, 95)
+  );
+  /* flex-basis: 56rem; */
+  height: calc(100vh);
+  width: calc(40vw);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 5rem;
+}
+
+.footer {
+  margin-top: auto;
+  font-size: small;
+  color: var(--color-light--1);
+}

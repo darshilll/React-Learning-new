@@ -1,0 +1,34 @@
+.HomePage {
+  background-image: linear-gradient(
+      rgba(36, 42, 46, 0.8),
+      rgba(36, 42, 46, 0.5)
+    ),
+    url(../assets/Images/bg.jpg);
+  background-size: cover;
+  background-position: 10% 40%;
+  padding: 2rem 5rem;
+  height: calc(100vh);
+  color: whitesmoke;
+}
+
+.HomePage section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 85%;
+  gap: 2rem;
+  text-align: center;
+}
+
+.HomePage h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.HomePage h2 {
+  width: 80%;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+}

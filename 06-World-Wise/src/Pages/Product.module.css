@@ -1,0 +1,28 @@
+.pricing {
+    background-image: linear-gradient(to right, rgba(18, 17, 17), rgb(99, 95, 95));
+    min-height: calc(100vh);
+    padding: 2rem 5rem;
+  }
+  
+  .section {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    color: white;
+    margin: 5rem 15rem;
+    gap: 5rem;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+  }
+  
+  .content {
+      width: 102%;
+    line-height: 1.5;
+  }
+  
+  .img_pricing {
+    height: 26rem;
+  }
+  

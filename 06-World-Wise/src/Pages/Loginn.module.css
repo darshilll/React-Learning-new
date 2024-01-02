@@ -1,0 +1,37 @@
+.login_page {
+  padding: 2rem 5rem;
+  background-image: linear-gradient(to right, rgba(18, 17, 17), rgb(99, 95, 95));;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: calc(100vh);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  width: 30rem;
+  font-size: larger;
+  margin: 8rem auto;
+  color: white;
+  gap: 1rem;
+  border-radius: 10px;
+  background-color: var(--color-dark--2);
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input {
+  border-radius: 5px;
+  border: none;
+  height: 2.2rem;
+  font-size: smaller;
+  font-weight: bold;
+  /* font-family: 'Courier New', Courier, monospace; */
+  outline: none;
+}
+
