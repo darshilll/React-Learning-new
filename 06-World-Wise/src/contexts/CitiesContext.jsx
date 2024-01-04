@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
@@ -8,6 +9,7 @@ const CitiesContext = createContext();
 const CitiesProvider = ({ children }) => {
   const [cities, setCities] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [currentCity, setCurrentCity] = useState([]);
 
   const baseURL = "http://localhost:9000";
 
@@ -19,8 +21,15 @@ const CitiesProvider = ({ children }) => {
     }
     fetchCities();
   }, []);
+
+  async function getCity(id) {
+    const res = await fetch(`${baseURL}/cities/${id}`);
+    const data = await res.json();
+    setCurrentCity(data);
+  }
+
   return (
-    <CitiesContext.Provider value={{ cities, isLoading }}>
+    <CitiesContext.Provider value={{ cities, isLoading, currentCity, getCity, }}>
       {children}
     </CitiesContext.Provider>
   );
@@ -32,4 +41,4 @@ function useCities() {
   return context;
 }
 
-export  { CitiesProvider, useCities };
+export { CitiesProvider, useCities };

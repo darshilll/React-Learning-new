@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 import CountryItem from "./CountryItem";
 import styles from "./countryList.module.css";
-import useCities from "../contexts/CitiesContext";
+import {useCities} from "../contexts/CitiesContext";
 
 const CountryList = () => {
   const { cities, isLoading } = useCities();

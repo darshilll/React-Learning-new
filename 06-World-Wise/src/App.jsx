@@ -10,6 +10,7 @@ import CityList from "./Components/CityList";
 import City from "./Components/City";
 import CountryList from "./Components/CountryList";
 import Form from "./Components/Form";
+import Map from "./Components/Map";
 import { CitiesProvider } from "./contexts/CitiesContext";
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
         </Routes>
       </BrowserRouter>
     </CitiesProvider>
+    
   );
 };
 export default App;

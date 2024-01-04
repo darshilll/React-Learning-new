@@ -1,0 +1,41 @@
+.city {
+  padding: 2rem 2rem;
+  max-height: 80%;
+  background-color: var(--color-dark--2);
+  border-radius: 10px;
+  /* overflow: scroll; */
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 18px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.city h6 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--color-light--1);
+}
+
+.city h3 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.city h3 span {
+  line-height: 1;
+}
+
+
+
+.city a:link,
+.city a:visited {
+  color: var(--color-brand--1);
+}
